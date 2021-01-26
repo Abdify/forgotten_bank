@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forgotten Bank</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div id="logInArea">
+        <h1 class="text-center">Welcome to Forgotten Bank</h1>
+        <div id="submitArea">
+            <h2>Log In first</h2>
+            <input type="email" name="" id="email" placeholder="Email..." class="form-control">
+            <br>
+            <input type="password" name="" id="password" placeholder="password" class="form-control">
+            <br>
+            <button type="submit" class="btn btn-success" id="submitButton">Enter into your account</button>
+        </div>
+    </div>
+
+    <div id="transactionArea">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="deposit amountBox">
+                    <h3>Deposit</h3>
+                    <h2>$ <span id="currentDepositAmount">00</span></h2>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="withdraw amountBox">
+                    <h3>Withdraw</h3>
+                    <h2>$ <span id="currentWithdrawAmount">00</span></h2>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="balance amountBox">
+                    <h3>Balance</h3>
+                    <h2>$ <span id="currentBalance">1000</span></h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" style="margin-top: 3rem;">
+            <div class="col-md-6">
+                <div class="depositWithdrawBox">
+                    <h2>Deposit</h2>
+                    <input type="text" placeholder="$ Deposit here..." class="form-control" id="depositAmount">
+                    <br>
+                    <button class="btn btn-success" id="depositButton">Deposit</button>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="depositWithdrawBox">
+                    <h2>Withdraw</h2>
+                    <input type="text" placeholder="$ Withdraw here..." class="form-control" id="withdrawAmount">
+                    <br>
+                    <button class="btn btn-success" id="withdrawButton">Withdraw</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="action.js"></script>
+</body>
+</html>
